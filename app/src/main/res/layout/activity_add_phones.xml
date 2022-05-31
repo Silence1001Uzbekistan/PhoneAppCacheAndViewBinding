@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPhonesActivity">
+
+    <EditText
+        android:id="@+id/phoneNameA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DED7D7"
+        android:hint="Phone name"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/phoneFeaturesA"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/phoneFeaturesA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DED7D7"
+        android:gravity="top"
+        android:hint="Phone features"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonSave"
+        app:layout_constraintHeight_percent="0.65"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneNameA"
+        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneFeaturesA"
+        app:layout_constraintVertical_bias="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
